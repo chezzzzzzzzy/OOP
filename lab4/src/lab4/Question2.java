@@ -12,8 +12,8 @@ public class Question2 {
 		Scanner getInput = new Scanner(System.in);
 	
 		System.out.println("Please enter a message: ");
-		String messageEntered = getInput.next();
-		
+		String messageEntered = getInput.nextLine();
+				
 		System.out.println("Please enter number of times: ");
 		times = getInput.nextInt();
 		
