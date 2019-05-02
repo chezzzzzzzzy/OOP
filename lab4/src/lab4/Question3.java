@@ -17,8 +17,6 @@ public class Question3 {
 		
 	}
 	
-	
-	
 	public static double sqRoot(double num) {
 		
 		Math.sqrt(num);
