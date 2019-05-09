@@ -18,7 +18,7 @@ public class Donation {
 	
 	public void donate(double amt) {
 		donorAmount += amt;
-		totalAmount = donorAmount;
+		totalAmount += amt;
 		
 	}
 

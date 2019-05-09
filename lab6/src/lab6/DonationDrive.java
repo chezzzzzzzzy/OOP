@@ -16,7 +16,7 @@ public class DonationDrive {
 		leeKC.donate(8000);
 		leeKC.donate(5000);
 		
-		System.out.println("The total amount of money donated by LKC is " + leeKC.totalAmount);
+		System.out.println("The total amount of money donated by LKC is " + leeKC.donorAmount);
 		
 		System.out.println("The total amount of money donated is " + Donation.totalAmount);
 
@@ -31,7 +31,7 @@ public class DonationDrive {
 		foundationTwo.donate(3000);
 		foundationTwo.donate(9000);
 		
-		System.out.println("The total amount of money donated by F2 is " + foundationTwo.totalAmount);
+		System.out.println("The total amount of money donated by F2 is " + foundationTwo.donorAmount);
 
 		System.out.println("The total amount of money donated is " + Donation.totalAmount);
 
