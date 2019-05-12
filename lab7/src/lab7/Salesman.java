@@ -5,7 +5,6 @@ public class Salesman extends Employee {
 	String region;
 	private float baseWkPay, totalWkSales, commission;
 	
-	Salesman a = new Salesman();
 
 	
 	public Salesman(){//no arg constructor to initialize basic info 
@@ -14,22 +13,20 @@ public class Salesman extends Employee {
 		baseWkPay = 250.0f;		//base pay is $250/week
 	}
 	
-	public Salesman(String name, String serial, String reg, float basePay, float salesTotal, float comm){
-		/*another constructor takes in parameters to initialize more variables*/
-		super(name, serial);
+	public Salesman(String name, String sn, String reg, float basePay, float salesTotal, float comm){
+		super(name, sn);
 		region = reg;
 		totalWkSales = salesTotal;
 		commission = comm;
 		baseWkPay = basePay;
 	}
 	
+	
+	@Override
 	public void calcWeeklySalary(){
-		/*Add your own codes here to override employee’s calcweeklySalary here*/
-		// weeklySalary = baseWkPay + totalWkSales*commission
-		weeklySalary = baseWkPay + totalWkSales * commission;
 		
-		
-		
+		weeklySalary = baseWkPay + totalWkSales * commission;	
+		System.out.println(weeklySalary);
 	}
 
 

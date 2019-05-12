@@ -7,29 +7,29 @@ import java.util.*;
 //calcWeeklySalary() method based of the type of employee.
 
 public class Employee{
-	String name, serial;
+	String name, sn;
 	float weeklySalary;
 	
 	public Employee(){
 		name = "";
-		serial = "";
+		sn = "";
 	}
 	
-	public Employee(String name, String serial){
+	public Employee(String name, String sn){
 		this.name = name;
-		this.serial = serial;
+		this.sn = sn;
 	}
 	
 	public String getName(){
 		return name; 
 	}
 	
-	public float getWeeklySalary() { return weeklySalary; }
+	public float getWeeklySalary() { 
+		return weeklySalary; 
+	}
 
-	//The salary calculation is different for each type of employee 
-	//Here is a basic weeklySalary. 
 	
 	public void calcWeeklySalary(){
-    	weeklySalary = 15 * 5;//take ITP student as an example
+    	weeklySalary = 15 * 5;
     }
 }

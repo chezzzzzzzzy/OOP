@@ -51,8 +51,6 @@ public class Question2 extends JFrame implements ActionListener {
 		jbtClose.addActionListener(this);
 		jbtEnter.addActionListener(this);
 
-
-	
 	}
 	
 	private JButton jbt1 = new JButton("1");
@@ -67,7 +65,7 @@ public class Question2 extends JFrame implements ActionListener {
 	private JButton jbt0 = new JButton("0");
 	private JButton jbtEnter = new JButton("Enter");
 	private JButton jbtClose = new JButton("Close");
-	private JTextField jTf = new JTextField();
+	private static JTextField jTf = new JTextField();
 	private JLabel jLabel = new JLabel("Please enter your pin");
 	private JOptionPane jOP = new JOptionPane("Successful");
 	
@@ -79,17 +77,13 @@ public class Question2 extends JFrame implements ActionListener {
 		frame.setTitle("Pin pad");
 		frame.setSize(500,500);
 		frame.setVisible(true);
-		
+
 		
 	}
 	
-	public void checkPin(String jTf) {
-
-		JFrame f = new JFrame();
-		jOP.showMessageDialog(f, "success");
-
-		
-	}
+	
+	
+	
 
 
 	@Override
@@ -117,8 +111,24 @@ public class Question2 extends JFrame implements ActionListener {
 			jTf.setText(jTf.getText() + "0");
 		} else if (e.getSource() == jbtClose) {
 			jTf.setText("");
-		} else if (e.getSource() == jbtEnter) {
-			System.out.println(jTf.getText());
 		} 
+		
+		if (e.getSource() == jbtEnter) {
+			
+			String pw;
+			pw = jTf.getText();
+			System.out.print(pw);
+			
+			if(pw.equals("1234")) {
+				JFrame f = new JFrame();
+				jOP.showMessageDialog(f, "success");
+			}
+			
+
+		} 
+	
+		
+	
+	
 	}
 }
