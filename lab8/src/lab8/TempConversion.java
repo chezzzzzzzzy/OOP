@@ -115,12 +115,7 @@ public class TempConversion extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-//		if (e.getSource() == cToFbutton) {
-//			double fahrenheit;
-//			fahrenheit = Double.valueOf(starting.getText()) / Double.valueOf(till.getText());
-//			System.out.println(fahrenheit);
-//
-//		}
+
 		
 		if (e.getSource() == resetButton) {
 			starting.setText("");
@@ -135,11 +130,26 @@ public class TempConversion extends JFrame implements ActionListener {
 		if (e.getSource() == convertButton) {
 			System.out.println("pressed");
 			
+			
+			try {
+			    int number = Integer.valueOf(starting.getText());
+			    int step = Integer.valueOf(withStep.getText());
 
-		
+			 
+
+				
+			} catch(NumberFormatException ex){
+			    System.out.println("Not a valid number!");
+			    JOptionPane alert = new JOptionPane();
+			    alert.showConfirmDialog(null, "Invalid input!", "", JOptionPane.DEFAULT_OPTION);
+
+			}
 			
 
+
 			if (cToFbutton.isSelected()) {
+				
+				
 				
 				boxA.setText("");
 				boxB.setText("");
@@ -148,9 +158,11 @@ public class TempConversion extends JFrame implements ActionListener {
 
 				double convertedF;
 				
-				for (int i = Integer.valueOf(starting.getText()); i < Integer.valueOf(till.getText()); i++) {
+				for (int i = Integer.valueOf(starting.getText()); i < Integer.valueOf(till.getText()); i+=Integer.valueOf(withStep.getText())) {
 					
 					withStep.getText();
+					System.out.println(withStep.getText());
+				
 					
 					boxA.setText(boxA.getText() + "\n" + Integer.toString(i));
 //					System.out.println(i);
@@ -176,7 +188,10 @@ public class TempConversion extends JFrame implements ActionListener {
 
 				double convertedC;
 				
-				for (int i = Integer.valueOf(starting.getText()); i < Integer.valueOf(till.getText()); i++) {
+				for (int i = Integer.valueOf(starting.getText()); i < Integer.valueOf(till.getText()); i+=Integer.valueOf(withStep.getText())) {
+					
+					withStep.getText();
+
 					
 					boxB.setText(boxB.getText() + "\n" + Integer.toString(i));
 //					System.out.println(i);

@@ -4,6 +4,9 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import java.awt.Color;
+import java.awt.Font;
+import javax.swing.JLabel;
+import java.awt.BorderLayout;
 
 public class CoolGUI2 {
 
@@ -37,6 +40,12 @@ public class CoolGUI2 {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.getContentPane().setBackground(Color.DARK_GRAY);
+		frame.getContentPane().setFont(new Font("Avenir", Font.PLAIN, 13));
+		
+		JLabel lblTest = new JLabel("Test");
+		lblTest.setForeground(Color.WHITE);
+		frame.getContentPane().add(lblTest, BorderLayout.CENTER);
 	}
 
 }
