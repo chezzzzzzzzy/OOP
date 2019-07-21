@@ -5,7 +5,6 @@ import java.util.*;
 
 public class Converter {
 
-	Scanner getInput = new Scanner(System.in);
 	
 	double celsius;
 	static double fahrenheit;
@@ -13,10 +12,7 @@ public class Converter {
 	public Converter() {
 		
 	}
-	
-	public static void main(String[] args) {
-		
-	}
+
 	
 	public static double cToF(double c) {
 		fahrenheit = (9.0/5) * c + 32;

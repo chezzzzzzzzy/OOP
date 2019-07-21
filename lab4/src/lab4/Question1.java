@@ -48,7 +48,7 @@ public class Question1 {
 		
 		
 		dc = (5.0/9.0) * (farenheit - 32);
-		System.out.println(dc);
+//		System.out.println(dc);
 		
 		return dc;
 	}

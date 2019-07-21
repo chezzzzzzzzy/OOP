@@ -11,13 +11,13 @@ public class BoxFan extends Fan {
 		
 	}
 	
-	public void changeColor(String c) {
-		color = c;
-	}
-
-	public String getColor() {
-		return color;
-	}
+//	public void changeColor(String c) {
+//		color = c;
+//	}
+//
+//	public String getColor() {
+//		return color;
+//	}
 	
 	public void setTiming(int time) {
 		timing = time;
@@ -34,11 +34,11 @@ public class BoxFan extends Fan {
 	}
 	
 
-	
-	public static void main(String[] args) {
-		
-	}
-	
+//	
+//	public static void main(String[] args) {
+//		
+//	}
+//	
 	
 
 }
